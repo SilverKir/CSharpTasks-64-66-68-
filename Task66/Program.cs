@@ -12,6 +12,7 @@ int Prompt(string massage)
 int PrintIntSumMN(int n, int m)
 {
     if (n > m) return m + PrintIntSumMN(n, m + 1);
+    if (n < m) return m + PrintIntSumMN(n, m - 1);
     return m;
 }
 
